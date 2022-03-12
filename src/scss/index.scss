@@ -1,0 +1,69 @@
+@use './global/global.scss' as g;
+
+/* Remove padding and margin */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+html {
+  font-size: g.$base-font-size;
+  /* For Screen Higher than 1440px */
+  @media (min-width: g.$screen-xlg) {
+    font-size: g.$base-font-size - 1;
+  }
+}
+
+body,
+html,
+div.board,
+div#react-container {
+  font-family: g.$font-primary, g.$font-secondary;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #222839;
+  color: g.$text-quad-color;
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+
+.o-text-heading0 {
+  font-size: 2.308rem;
+  font-weight: bold;
+  line-height: 1.25;
+}
+.o-text-heading1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  margin: 0;
+}
+
+.o-text-heading2 {
+  font-size: 1.385rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.o-text-heading3 {
+  font-size: 1.231rem;
+  font-weight: normal;
+  line-height: 1.25;
+}
+
+.o-text-description {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.43;
+  color: g.$text-tertiary-color;
+}

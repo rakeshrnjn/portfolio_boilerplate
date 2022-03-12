@@ -1,0 +1,21 @@
+/* Color */
+$primary-color: #f0f2f5;
+$secondary-color: #181c27;
+$tertiary-color: #c1c3cd;
+
+//background color
+$primary-background-color: #181c27;
+$secondary-background-color: #222839;
+$tertiary-background-color: #131622;
+
+// text
+$text-primary-color: $primary-color;
+$text-secondary-color: $secondary-color;
+$text-tertiary-color: $tertiary-color;
+$text-quad-color: #d2d5dd;
+
+//border
+$border-primary-color: $primary-background-color;
+$border-secondary-color: $secondary-background-color;
+$border-tertiary-color: $tertiary-background-color;
+$border-light-color: $primary-color;
