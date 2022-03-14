@@ -1,4 +1,4 @@
-@use './global/global.scss' as g;
+@use './global/global.scss' as G;
 
 /* Remove padding and margin */
 * {
@@ -7,10 +7,10 @@
   border: 0;
 }
 html {
-  font-size: g.$base-font-size;
+  font-size: G.$base-font-size;
   /* For Screen Higher than 1440px */
-  @media (min-width: g.$screen-xlg) {
-    font-size: g.$base-font-size - 1;
+  @media (min-width: G.$screen-xlg) {
+    font-size: G.$base-font-size - 1;
   }
 }
 
@@ -18,16 +18,20 @@ body,
 html,
 div.board,
 div#react-container {
-  font-family: g.$font-primary, g.$font-secondary;
+  font-family: G.$font-primary, G.$font-secondary;
   height: 100%;
-  overflow: hidden;
+  background-color: G.$primary-background-color;
 }
 
 body {
   margin: 0;
   padding: 0;
   background-color: #222839;
-  color: g.$text-quad-color;
+  color: G.$text-quad-color;
+}
+
+.App {
+  // overflow: auto;
 }
 
 .justify-space-around {
@@ -65,5 +69,5 @@ body {
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.43;
-  color: g.$text-tertiary-color;
+  color: G.$text-tertiary-color;
 }

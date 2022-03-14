@@ -1,0 +1,32 @@
+@use '../global/global.scss' as G;
+
+.c-hero {
+  height: 929px;
+  position: relative;
+
+  .hero-image {
+    // position: absolute;
+    width: 100%;
+    height: inherit;
+    filter: brightness(0.5);
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .hero-text {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &_wrapper {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

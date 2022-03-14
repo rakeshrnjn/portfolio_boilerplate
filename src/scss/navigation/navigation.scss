@@ -1,0 +1,23 @@
+@use '../global/global.scss' as G;
+
+.c-navigation {
+  display: flex;
+  list-style: none;
+  margin-bottom: 0;
+
+  li {
+    padding: 5px 10px;
+
+    a {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: G.$text-secondary-color;
+      text-decoration: none;
+      cursor: pointer;
+      &.active {
+        color: G.$text-primary-color;
+        text-decoration: none;
+      }
+    }
+  }
+}
