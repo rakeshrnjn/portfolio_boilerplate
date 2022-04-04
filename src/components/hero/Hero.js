@@ -8,8 +8,8 @@ const Hero = (props) => {
   return (
     <div className="c-hero">
       <picture className="hero-image">
-        <source media="(min-width:650px)" srcset={HeroImage} />
-        <source media="(min-width:465px)" srcset={HeroImage} />
+        <source media="(min-width:650px)" srcSet={HeroImage} />
+        <source media="(min-width:465px)" srcSet={HeroImage} />
         <img src={HeroImage} alt="Flowers" className="" />
       </picture>
       <div className="hero-text_wrapper">
