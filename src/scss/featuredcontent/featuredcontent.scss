@@ -1,4 +1,9 @@
 @use '../global/global.scss' as G;
 
 .c-featured-content {
+  .featured-image {
+    img {
+      width: 100%;
+    }
+  }
 }

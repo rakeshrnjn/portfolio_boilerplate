@@ -9,7 +9,7 @@ const FeaturedContent = (props) => {
     <Container className="c-featured-content">
       <Row>
         <Col md={5}>
-          <picture className="hero-image">
+          <picture className="featured-image">
             <source media="(min-width:650px)" srcSet={FeaturedImage} />
             <source media="(min-width:465px)" srcSet={FeaturedImage} />
             <img src={FeaturedImage} alt="Flowers" className="" />
