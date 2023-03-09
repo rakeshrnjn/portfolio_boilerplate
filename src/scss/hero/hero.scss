@@ -1,9 +1,10 @@
 @use '../global/global.scss' as G;
 
 .c-hero {
-  height: 929px;
+  height: 100vh;
   position: relative;
-
+  color: G.$text-tertiary-color;
+  
   .hero-image {
     // position: absolute;
     width: 100%;
@@ -14,11 +15,20 @@
       width: 100%;
     }
   }
+
+  .parallax {
+    background-image: url("../../assets/img/hero/smart_1280.jpg");
+    min-height: 100vh; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .hero-text {
     display: flex;
     height: 100%;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
     justify-content: center;
     flex-direction: column;
 
@@ -27,6 +37,28 @@
       top: 0;
       height: 100%;
       width: 100%;
+      background-color: #02060a8f;
     }
+
+    &-subtitle {
+      font-weight: 200;
+    font-size: calc(20px + (45 - 20) * ((100vw - 300px)/ (1600 - 300)));
+    }
+
+    &-title {
+      font-size: calc(40px + (120 - 40) * ((100vw - 300px)/ (1600 - 300)));
+      font-weight: 700;
+      line-height: .7;
+      margin-bottom: 25px;
+      color: inherit;
+    }
+
+    &-mono {
+      letter-spacing: 5px;
+      font-weight: 500;
+      font-size: calc(12px + (19 - 12) * ((100vw - 300px)/ (1600 - 300)));
+      margin-bottom: 40px
+    }
+
   }
 }

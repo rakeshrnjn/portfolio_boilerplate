@@ -5,7 +5,16 @@
   top: 0;
   width: 100%;
   z-index: 2;
-  border-bottom: 1px solid green;
-  //   background-color: G.$primary-background-color;
-  background: transparent;
+  
+ 
+  &.initial{
+    background: transparent;
+    color: G.$text-tertiary-color;
+  }
+
+  &.scrolled{
+    background-color: G.$primary-background-color;
+    border-bottom: 1px solid #2a364345;
+    color: G.$text-primary-color;
+  }
 }

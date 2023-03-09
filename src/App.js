@@ -15,7 +15,7 @@ function App() {
       <div id="home">
         <Hero />
       </div>
-      <div id="about">
+      <div id="about" className='s-aboutme'>
         <FeaturedContent />
       </div>
       <div id="skills">

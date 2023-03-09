@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import FeaturedImage from '../../assets/img/hero/smart_1920.jpg';
 
 import '../../scss/featuredcontent/featuredcontent.scss';
 
 const FeaturedContent = (props) => {
+  const [counter, setCounter] = useState(1);
   return (
     <Container className="c-featured-content">
       <Row>
@@ -16,13 +17,25 @@ const FeaturedContent = (props) => {
           </picture>
         </Col>
         <Col md={7}>
-          <h2>About section</h2>
-          <p>
+          <h2 className='o-text-heading2'>About section</h2>
+          <p className='o-text-description'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
             repellendus. Totam nihil similique a repellat minus dolor amet
             quasi. Corporis nulla quaerat iste, sed quasi ab dolorem maxime
             minima animi.
           </p>
+
+          <Row>
+            <Col md={5}>
+          <p className='o-text-description'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
+            repellendus.
+          </p>
+            </Col>
+            <Col md={7}>
+              <button>Download</button>
+            </Col>
+          </Row>
         </Col>
       </Row>
     </Container>

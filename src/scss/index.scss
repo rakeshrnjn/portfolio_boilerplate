@@ -8,6 +8,7 @@
 }
 html {
   font-size: G.$base-font-size;
+  font: G.$font-primary;
   /* For Screen Higher than 1440px */
   @media (min-width: G.$screen-xlg) {
     font-size: G.$base-font-size - 1;
@@ -55,6 +56,15 @@ body {
   justify-content: space-around;
 }
 
+h1,h2,h3,h5,h5 {
+  color: G.$text-tertiary-color;
+}
+
+.o-text-heading-large {
+  font-size: 5.308rem;
+  font-weight: bold;
+  line-height: 1.25;
+}
 .o-text-heading0 {
   font-size: 2.308rem;
   font-weight: bold;
@@ -87,4 +97,9 @@ body {
   font-weight: 500;
   line-height: 1.43;
   color: G.$text-tertiary-color;
+}
+
+.s-aboutme {
+  background-color:G.$secondary-background-color;
+  padding: 20px 0;
 }

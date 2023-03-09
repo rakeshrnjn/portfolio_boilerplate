@@ -1,0 +1,8 @@
+@for $i from 1 through 100 {
+    .dynamic-div-#{$i}{
+        position: relative;
+        width: 100px + $i;
+        height: 100px + $i;
+        border: 1px solid orange;
+    }
+}
