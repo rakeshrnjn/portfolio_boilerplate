@@ -8,7 +8,7 @@ const Work = () => {
   return (
     <section className="c-work">
       <Container>
-        <div>
+        <div className='c-work_wrapper'>
           <WorkTile />
           <WorkTile />
           <WorkTile />

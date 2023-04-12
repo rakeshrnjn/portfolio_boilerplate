@@ -1,7 +1,8 @@
 @use '../global/global.scss' as G;
 
 .c-featured-content {
-  padding: 100px 0;
+  background-color: transparent;
+  padding: 10px 0;
   .featured-image {
     display: flex;
     align-content: center;
@@ -12,6 +13,10 @@
       height: 100%;
       // border-radius: 50%;
     }
+  }
+
+  &_right{
+    align-self: center;
   }
 
   .o-text-heading2{

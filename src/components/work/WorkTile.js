@@ -5,7 +5,7 @@ import '../../scss/work/worktile.scss';
 const WorkTile = () => {
   return (
     <div className="c-worktile">
-      <h2>Project</h2>
+      <p>Project</p>
     </div>
   );
 };

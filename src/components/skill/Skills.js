@@ -8,7 +8,9 @@ const Skills = () => {
   return (
     <section className="c-skills">
       <Container>
-        <div>
+        <div className='c-skills_wrapper'>
+          <SkillTile />
+          <SkillTile />
           <SkillTile />
           <SkillTile />
           <SkillTile />

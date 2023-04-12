@@ -1,22 +1,21 @@
 import React, {useState} from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import FeaturedImage from '../../assets/img/hero/smart_1920.jpg';
+import FeaturedImage from '../../assets/img/me/professional_shot.jpg';
 
 import '../../scss/featuredcontent/featuredcontent.scss';
 
 const FeaturedContent = (props) => {
-  const [counter, setCounter] = useState(1);
   return (
     <Container className="c-featured-content">
       <Row>
-        <Col md={5}>
+        <Col md={6} className="c-featured-content_left">
           <picture className="featured-image">
             <source media="(min-width:650px)" srcSet={FeaturedImage} />
             <source media="(min-width:465px)" srcSet={FeaturedImage} />
             <img src={FeaturedImage} alt="Flowers" className="" />
           </picture>
         </Col>
-        <Col md={7}>
+        <Col md={6} className="c-featured-content_right">
           <h2 className='o-text-heading2'>About section</h2>
           <p className='o-text-description'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,

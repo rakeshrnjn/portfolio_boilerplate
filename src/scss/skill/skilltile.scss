@@ -1,4 +1,8 @@
 @use '../global/global.scss' as G;
 
 .c-skilltile {
+    width: 150px;
+    height: 150px;
+    border: 1px solid orange;
+    border-radius: 50%;
 }

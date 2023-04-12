@@ -5,6 +5,8 @@ import FeaturedContent from './components/featuredcontent/FeaturedContent';
 import RichText from './components/richtext/RichText';
 import Skills from './components/skill/Skills';
 import Work from './components/work/Work';
+import Footer from './components/footer/Footer';
+import ContactMe from './components/contactMe/ContactMe';
 
 function App() {
   return (
@@ -27,18 +29,8 @@ function App() {
       <div id="works">
         <Work />
       </div>
-      <div id="contact">
-        <h1>This is Contact section</h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
-        repellendus. Totam nihil similique a repellat minus dolor amet quasi.
-        Corporis nulla quaerat iste, sed quasi ab dolorem maxime minima animi.
-      </div>
-      <div id="footer">
-        <h1>This is Service section</h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
-        repellendus. Totam nihil similique a repellat minus dolor amet quasi.
-        Corporis nulla quaerat iste, sed quasi ab dolorem maxime minima animi.
-      </div>
+      <ContactMe />
+      <Footer />
       <ScrollToTop />
     </div>
   );
